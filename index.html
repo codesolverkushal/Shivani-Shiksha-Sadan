@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शिवानी शिक्षा सदन - होली महोत्सव</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .color-splash {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.5;
+            z-index: 1;
+        }
+        
+        .splash1 {
+            background-color: #ff4081;
+            width: 200px;
+            height: 200px;
+            top: -50px;
+            left: 10%;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .splash2 {
+            background-color: #29b6f6;
+            width: 150px;
+            height: 150px;
+            top: 20px;
+            right: 15%;
+            animation: float 7s ease-in-out infinite 1s;
+        }
+        
+        .splash3 {
+            background-color: #ffc107;
+            width: 120px;
+            height: 120px;
+            bottom: -30px;
+            left: 25%;
+            animation: float 9s ease-in-out infinite 0.5s;
+        }
+        
+        .splash4 {
+            background-color: #4caf50;
+            width: 180px;
+            height: 180px;
+            bottom: -40px;
+            right: 25%;
+            animation: float 10s ease-in-out infinite 1.5s;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+        
+        .school-name {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .school-address {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .holi-title {
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            color: #ffeb3b;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/api/placeholder/1200/600') center/cover no-repeat;
+        }
+        
+        .hero h2 {
+            font-size: 2.2rem;
+            color: #673ab7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: #555;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff4081, #e91e63);
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.6);
+        }
+        
+        /* Event Details */
+        .event-details {
+            background-color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: #673ab7;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 3px;
+            background: linear-gradient(to right, #ff4081, #673ab7);
+            bottom: -10px;
+            left: 10%;
+        }
+        
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .event-card {
+            background: linear-gradient(#f5f5f5, #e0e0e0);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .event-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #673ab7;
+        }
+        
+        .event-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ff4081;
+        }
+        
+        .event-card p {
+            color: #666;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            padding: 4rem 2rem;
+            background-color: #f0f2ff;
+            text-align: center;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Schedule Section */
+        .schedule {
+            background: linear-gradient(135deg, #f8f8ff 0%, #e6e6ff 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .schedule-table {
+            max-width: 800px;
+            margin: 2rem auto;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .schedule-table th, .schedule-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .schedule-table th {
+            background-color: #673ab7;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        .schedule-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .schedule-table tr:hover {
+            background-color: #f0f0ff;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .contact-title {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .contact-item {
+            flex: 1 1 250px;
+            padding: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .contact-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #ffeb3b;
+        }
+        
+        .contact-item p {
+            font-size: 1.1rem;
+        }
+        
+        /* Footer Section */
+        footer {
+            background-color: #4a148c;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-content p {
+            margin: 1rem 0;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .school-name {
+                font-size: 2rem;
+            }
+            
+            .holi-title {
+                font-size: 1.8rem;
+            }
+            
+            .event-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-details {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="color-splash splash1"></div>
+        <div class="color-splash splash2"></div>
+        <div class="color-splash splash3"></div>
+        <div class="color-splash splash4"></div>
+        <div class="header-content">
+            <h1 class="school-name">शिवानी शिक्षा सदन</h1>
+            <p class="school-address">नगला डालू, पटियाली, कासगंज</p>
+            <h2 class="holi-title">होली महोत्सव 2025</h2>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>रंगों के त्योहार में आप सभी का स्वागत है</h2>
+        <p>आइए इस होली पर हम सब मिलकर खुशियों के रंग बिखेरें और अपने विद्यालय में इस पावन पर्व को धूमधाम से मनाएं। प्राकृतिक रंगों के साथ सांस्कृतिक कार्यक्रम, संगीत और नृत्य का आनंद लें।</p>
+    </section>
+
+
+    <section class="gallery">
+        <h2 class="section-title">होली उत्सव की झलकियाँ</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/image/img1.jpg" alt="होली उत्सव की झलक 1" />
+            </div>
+            <div class="gallery-item">
+                <img src="/image/img2.jpg" alt="होली उत्सव की झलक 2" />
+            </div>
+            <div class="gallery-item">
+                <img src="/image/img3.jpg" alt="होली उत्सव की झलक 3" />
+            </div>
+            <div class="gallery-item">
+                <img src="/image/img4.jpg" alt="होली उत्सव की झलक 4" />
+            </div>
+            <div class="gallery-item">
+                <img src="/image/img5.jpg" alt="होली उत्सव की झलक 5" />
+            </div>
+            <div class="gallery-item">
+                <img src="/image/img6.jpg" alt="होली उत्सव की झलक 6" />
+            </div>
+        </div>
+    </section>
+</body>
+    
