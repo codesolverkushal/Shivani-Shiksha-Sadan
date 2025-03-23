@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>शिवानी शिक्षा सदन - होली महोत्सव</title>
+    <title>शिवानी शिक्षा सदन - सामाजिक ज्ञान प्रतियोगिता</title>
     <style>
         /* Global Styles */
         * {
@@ -21,7 +21,7 @@
         
         /* Header Section */
         header {
-            background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+            background: linear-gradient(135deg, #1a5276 0%, #2980b9 100%);
             color: white;
             text-align: center;
             padding: 2rem 0;
@@ -42,7 +42,7 @@
         }
         
         .splash1 {
-            background-color: #ff4081;
+            background-color: #3498db;
             width: 200px;
             height: 200px;
             top: -50px;
@@ -51,7 +51,7 @@
         }
         
         .splash2 {
-            background-color: #29b6f6;
+            background-color: #f39c12;
             width: 150px;
             height: 150px;
             top: 20px;
@@ -60,7 +60,7 @@
         }
         
         .splash3 {
-            background-color: #ffc107;
+            background-color: #2ecc71;
             width: 120px;
             height: 120px;
             bottom: -30px;
@@ -69,7 +69,7 @@
         }
         
         .splash4 {
-            background-color: #4caf50;
+            background-color: #e74c3c;
             width: 180px;
             height: 180px;
             bottom: -40px;
@@ -95,10 +95,10 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
         
-        .holi-title {
+        .competition-title {
             font-size: 2.5rem;
             margin-top: 1rem;
-            color: #ffeb3b;
+            color: #f1c40f;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             animation: pulse 2s infinite;
         }
@@ -114,12 +114,12 @@
             position: relative;
             text-align: center;
             padding: 4rem 0;
-            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/api/placeholder/1200/600') center/cover no-repeat;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/api/placeholder/1200/600') center/cover no-repeat;
         }
         
         .hero h2 {
             font-size: 2.2rem;
-            color: #673ab7;
+            color: #1a5276;
             margin-bottom: 1.5rem;
         }
         
@@ -132,19 +132,19 @@
         
         .cta-button {
             display: inline-block;
-            background: linear-gradient(45deg, #ff4081, #e91e63);
+            background: linear-gradient(45deg, #2980b9, #3498db);
             color: white;
             font-size: 1.2rem;
             padding: 12px 28px;
             border-radius: 50px;
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+            box-shadow: 0 4px 15px rgba(41, 128, 185, 0.4);
             transition: all 0.3s ease;
         }
         
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.6);
+            box-shadow: 0 6px 20px rgba(41, 128, 185, 0.6);
         }
         
         /* Event Details */
@@ -156,7 +156,7 @@
         
         .section-title {
             font-size: 2rem;
-            color: #673ab7;
+            color: #1a5276;
             margin-bottom: 2rem;
             position: relative;
             display: inline-block;
@@ -167,7 +167,7 @@
             position: absolute;
             width: 80%;
             height: 3px;
-            background: linear-gradient(to right, #ff4081, #673ab7);
+            background: linear-gradient(to right, #3498db, #1a5276);
             bottom: -10px;
             left: 10%;
         }
@@ -196,13 +196,13 @@
         .event-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
-            color: #673ab7;
+            color: #1a5276;
         }
         
         .event-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: #ff4081;
+            color: #2980b9;
         }
         
         .event-card p {
@@ -210,43 +210,119 @@
         }
         
         /* Gallery Section */
-        .gallery {
-            padding: 4rem 2rem;
-            background-color: #f0f2ff;
-            text-align: center;
-        }
-        
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            max-width: 1200px;
-            margin: 2rem auto;
-        }
-        
-        .gallery-item {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .gallery-item:hover {
-            transform: scale(1.03);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-        }
-        
-        .gallery-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
+.gallery {
+    padding: 4rem 1rem;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 2.5rem;
+}
+
+.gallery-grid {
+    display: grid;
+    /* Two columns on larger screens */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto; /* Allow natural height based on aspect ratio */
+    max-height: 450px; /* Maximum height while maintaining aspect ratio */
+    object-fit: contain; /* Show the entire image without cropping */
+    display: block;
+    transition: transform 0.5s ease;
+    background-color: #f9f9f9; /* Light background for transparent images */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Optional image caption */
+.gallery-item .caption {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    color: #444;
+    text-align: center;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .gallery-grid {
+        /* One column on mobile screens */
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .gallery-item img {
+        max-height: none; /* Remove max height constraint on mobile */
+        width: 100%; /* Full width */
+    }
+    
+    .gallery {
+        padding: 2rem 0.75rem;
+    }
+    
+    .gallery-item {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Tablet adjustments */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .gallery-item img {
+        max-height: 350px;
+    }
+}
+
+/* High resolution screens */
+@media screen and (min-width: 1440px) {
+    .gallery-grid {
+        gap: 2.5rem;
+    }
+    
+    .gallery-item img {
+        max-height: 500px;
+    }
+}
+
+/* Ensure images load smoothly */
+.gallery-item img {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
         
         /* Schedule Section */
         .schedule {
-            background: linear-gradient(135deg, #f8f8ff 0%, #e6e6ff 100%);
+            background: linear-gradient(135deg, #f8f8ff 0%, #e6f7ff 100%);
             padding: 4rem 2rem;
             text-align: center;
         }
@@ -269,7 +345,7 @@
         }
         
         .schedule-table th {
-            background-color: #673ab7;
+            background-color: #1a5276;
             color: white;
             font-size: 1.1rem;
         }
@@ -279,13 +355,80 @@
         }
         
         .schedule-table tr:hover {
-            background-color: #f0f0ff;
+            background-color: #e6f7ff;
+        }
+        
+        /* Winners Section */
+        .winners {
+            padding: 4rem 2rem;
+            background-color: white;
+            text-align: center;
+        }
+        
+        .winners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        
+        .winner-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4ecf7 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .winner-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #3498db, #2ecc71);
+        }
+        
+        .winner-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .medal-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .gold {
+            color: #f39c12;
+        }
+        
+        .silver {
+            color: #bdc3c7;
+        }
+        
+        .bronze {
+            color: #cd7f32;
+        }
+        
+        .winner-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #1a5276;
+        }
+        
+        .winner-card p {
+            color: #666;
         }
         
         /* Contact Section */
         .contact {
             padding: 4rem 2rem;
-            background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+            background: linear-gradient(135deg, #1a5276 0%, #2980b9 100%);
             color: white;
             text-align: center;
         }
@@ -316,7 +459,7 @@
         .contact-item h3 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
-            color: #ffeb3b;
+            color: #f1c40f;
         }
         
         .contact-item p {
@@ -325,7 +468,7 @@
         
         /* Footer Section */
         footer {
-            background-color: #4a148c;
+            background-color: #154360;
             color: white;
             text-align: center;
             padding: 2rem;
@@ -346,7 +489,7 @@
                 font-size: 2rem;
             }
             
-            .holi-title {
+            .competition-title {
                 font-size: 1.8rem;
             }
             
@@ -370,39 +513,247 @@
         <div class="header-content">
             <h1 class="school-name">शिवानी शिक्षा सदन</h1>
             <p class="school-address">नगला डालू, पटियाली, कासगंज</p>
-            <h2 class="holi-title">होली महोत्सव 2025</h2>
+            <h2 class="competition-title">सामाजिक ज्ञान प्रतियोगिता 2025</h2>
         </div>
     </header>
     
     <!-- Hero Section -->
     <section class="hero">
-        <h2>रंगों के त्योहार में आप सभी का स्वागत है</h2>
-        <p>आइए इस होली पर हम सब मिलकर खुशियों के रंग बिखेरें और अपने विद्यालय में इस पावन पर्व को धूमधाम से मनाएं। प्राकृतिक रंगों के साथ सांस्कृतिक कार्यक्रम, संगीत और नृत्य का आनंद लें।</p>
+        <h2>श्री मोहन सिंह उ० मा० विद्या मन्दिर गढ़ि‌या, जागपुरा (एटा)  में आयोजित</h2>
+        <p>सामाजिक ज्ञान प्रतियोगिता में सफल छात्र/छात्राओं का पुरस्कार वितरण समारोह। ज्ञान के इस महाकुंभ में हमारे प्रतिभाशाली विद्यार्थियों की प्रतिभा और परिश्रम का जश्न मनाएँ।</p>
+        <a href="#gallery" class="cta-button">प्रतियोगिता की झलकियाँ देखें</a>
     </section>
 
+    <!-- Event Details -->
 
-    <section class="gallery">
-        <h2 class="section-title">होली उत्सव की झलकियाँ</h2>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">प्रतियोगिता की झलकियाँ</h2>
         <div class="gallery-grid">
+            <!-- Row 1 -->
             <div class="gallery-item">
-                <img src="/image/img1.jpg" alt="होली उत्सव की झलक 1" />
+                <img src="image/img1.jpg" alt="प्रतियोगिता की झलक 1" />
             </div>
             <div class="gallery-item">
-                <img src="/image/img2.jpg" alt="होली उत्सव की झलक 2" />
+                <img src="image/img2.jpg" alt="प्रतियोगिता की झलक 2" />
+            </div>
+            <!-- Row 2 -->
+            <div class="gallery-item">
+                <img src="image/img3.jpg" alt="प्रतियोगिता की झलक 3" />
             </div>
             <div class="gallery-item">
-                <img src="/image/img3.jpg" alt="होली उत्सव की झलक 3" />
+                <img src="image/img4.jpg" alt="प्रतियोगिता की झलक 4" />
+            </div>
+            <!-- Row 3 -->
+            <div class="gallery-item">
+                <img src="image/img5.jpg" alt="प्रतियोगिता की झलक 5" />
+            </div>
+           
+            <div class="gallery-item">
+                <img src="image/img8.jpg" alt="प्रतियोगिता की झलक 8" />
+            </div>
+            <!-- Row 5 -->
+            <div class="gallery-item">
+                <img src="image/img9.jpg" alt="प्रतियोगिता की झलक 9" />
             </div>
             <div class="gallery-item">
-                <img src="/image/img4.jpg" alt="होली उत्सव की झलक 4" />
+                <img src="image/img10.jpg" alt="प्रतियोगिता की झलक 10" />
+            </div>
+            <!-- Row 6 -->
+            <div class="gallery-item">
+                <img src="image/img11.jpg" alt="प्रतियोगिता की झलक 11" />
             </div>
             <div class="gallery-item">
-                <img src="/image/img5.jpg" alt="होली उत्सव की झलक 5" />
+                <img src="image/img12.jpg" alt="प्रतियोगिता की झलक 12" />
+            </div>
+            <!-- Row 7 -->
+            <div class="gallery-item">
+                <img src="image/img13.jpg" alt="प्रतियोगिता की झलक 13" />
             </div>
             <div class="gallery-item">
-                <img src="/image/img6.jpg" alt="होली उत्सव की झलक 6" />
+                <img src="image/img14.jpg" alt="प्रतियोगिता की झलक 14" />
+            </div>
+            <!-- Row 8 -->
+            <div class="gallery-item">
+                <img src="image/img15.jpg" alt="प्रतियोगिता की झलक 15" />
+            </div>
+            <div class="gallery-item">
+                <img src="image/img16.jpg" alt="प्रतियोगिता की झलक 16" />
+            </div>
+            <!-- Row 9 -->
+            <div class="gallery-item">
+                <img src="image/img17.jpg" alt="प्रतियोगिता की झलक 17" />
+            </div>
+            <div class="gallery-item">
+                <img src="image/img18.jpg" alt="प्रतियोगिता की झलक 18" />
+            </div>
+            <!-- Row 10 -->
+            <div class="gallery-item">
+                <img src="image/img19.jpg" alt="प्रतियोगिता की झलक 19" />
+            </div>
+            <div class="gallery-item">
+                <img src="image/img20.jpg" alt="प्रतियोगिता की झलक 20" />
+            </div>
+            <!-- Row 11 -->
+            <div class="gallery-item">
+                <img src="image/img21.jpg" alt="प्रतियोगिता की झलक 21" />
+            </div>
+            <div class="gallery-item">
+                <img src="image/img22.jpg" alt="प्रतियोगिता की झलक 22" />
+            </div>
+            <!-- Row 12 -->
+            <div class="gallery-item">
+                <img src="image/img23.jpg" alt="प्रतियोगिता की झलक 23" />
+            </div>
+            <div class="gallery-item">
+                <img src="image/img24.jpg" alt="प्रतियोगिता की झलक 24" />
+            </div>
+            <!-- Row 13 -->
+            <!-- <div class="gallery-item">
+                <img src="image/img25.jpg" alt="प्रतियोगिता की झलक 25" />
+            </div> -->
+            <!-- <div class="gallery-item">
+                <img src="image/img26.jpg" alt="प्रतियोगिता की झलक 26" />
+            </div> -->
+            <!-- Row 14 -->
+            <!-- <div class="gallery-item">
+                <img src="image/img27.jpg" alt="प्रतियोगिता की झलक 27" />
+            </div> -->
+            <div class="gallery-item">
+                <img src="image/img28.jpg" alt="प्रतियोगिता की झलक 28" />
+            </div>
+            <!-- Row 15 -->
+            <div class="gallery-item">
+                <img src="image/img29.jpg" alt="प्रतियोगिता की झलक 29" />
+            </div>
+            <div class="gallery-item">
+                <img src="image/img30.jpg" alt="प्रतियोगिता की झलक 30" />
+            </div>
+            <!-- Row 16 -->
+            <div class="gallery-item">
+                <img src="image/img31.jpg" alt="प्रतियोगिता की झलक 31" />
+            </div>
+            <div class="gallery-item">
+                <img src="image/img32.jpg" alt="प्रतियोगिता की झलक 32" />
+            </div>
+            <!-- Row 17 -->
+            <div class="gallery-item">
+                <img src="image/img33.jpg" alt="प्रतियोगिता की झलक 33" />
+            </div>
+            <div class="gallery-item">
+                <img src="image/img34.jpg" alt="प्रतियोगिता की झलक 34" />
+            </div>
+            <!-- Row 18 -->
+            <div class="gallery-item">
+                <img src="image/img35.jpg" alt="प्रतियोगिता की झलक 35" />
+            </div>
+            <div class="gallery-item">
+                <img src="image/img36.jpg" alt="प्रतियोगिता की झलक 36" />
             </div>
         </div>
     </section>
+
+    <!-- Schedule Section -->
+    <!-- <section class="schedule">
+        <h2 class="section-title">कार्यक्रम विवरण</h2>
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>समय</th>
+                    <th>कार्यक्रम</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>सुबह 9:00 बजे</td>
+                    <td>पंजीकरण एवं स्वागत</td>
+                </tr>
+                <tr>
+                    <td>सुबह 10:00 बजे</td>
+                    <td>उद्घाटन समारोह</td>
+                </tr>
+                <tr>
+                    <td>सुबह 10:30 बजे</td>
+                    <td>प्रतियोगिता प्रारंभ</td>
+                </tr>
+                <tr>
+                    <td>दोपहर 12:30 बजे</td>
+                    <td>मध्याह्न भोजन</td>
+                </tr>
+                <tr>
+                    <td>दोपहर 2:00 बजे</td>
+                    <td>परिणाम घोषणा</td>
+                </tr>
+                <tr>
+                    <td>दोपहर 3:00 बजे</td>
+                    <td>पुरस्कार वितरण समारोह</td>
+                </tr>
+                <tr>
+                    <td>शाम 4:30 बजे</td>
+                    <td>समापन समारोह</td>
+                </tr>
+            </tbody>
+        </table>
+    </section> -->
+
+    <!-- Winners Section -->
+    <!-- <section class="winners">
+        <h2 class="section-title">प्रतियोगिता के विजेता</h2>
+        <div class="winners-grid">
+            <div class="winner-card">
+                <div class="medal-icon gold">🥇</div>
+                <h3>प्रथम पुरस्कार</h3>
+                <p><strong>अनुराग शर्मा</strong></p>
+                <p>कक्षा 10-A</p>
+                <p>98% अंक</p>
+            </div>
+            <div class="winner-card">
+                <div class="medal-icon silver">🥈</div>
+                <h3>द्वितीय पुरस्कार</h3>
+                <p><strong>प्रिया पटेल</strong></p>
+                <p>कक्षा 9-B</p>
+                <p>95% अंक</p>
+            </div>
+            <div class="winner-card">
+                <div class="medal-icon bronze">🥉</div>
+                <h3>तृतीय पुरस्कार</h3>
+                <p><strong>आदित्य सिंह</strong></p>
+                <p>कक्षा 11-A</p>
+                <p>93% अंक</p>
+            </div>
+            <div class="winner-card">
+                <div class="medal-icon">🌟</div>
+                <h3>विशेष पुरस्कार</h3>
+                <p><strong>नैना गुप्ता</strong></p>
+                <p>कक्षा 8-C</p>
+                <p>सर्वश्रेष्ठ नवोदित प्रतिभागी</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2 class="contact-title">संपर्क जानकारी</h2>
+        <div class="contact-details">
+            <div class="contact-item">
+                <h3>पता</h3>
+                <p>शिवानी शिक्षा सदन</p>
+                <p>नगला डालू, पटियाली, कासगंज</p>
+            </div>
+            <div class="contact-item">
+                <h3>संपर्क नंबर</h3>
+                <p>+91 9457668987</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 शिवानी शिक्षा सदन | सभी अधिकार सुरक्षित</p>
+            <p>हमारे सभी प्रतिभागियों और आयोजकों का धन्यवाद!</p>
+        </div>
+    </footer>
 </body>
-    
+</html>
